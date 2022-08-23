@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap"  rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+
+  <link href="./css/style.css" rel="stylesheet">
+
+  
+
+</head>
+<body>
+<section>
+  
+<nav class="bg-white border-gray-200 px-4 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+  <a href="https://flowbite.com/" class="flex items-center">
+      <img src="./images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+  </a>
+  <div class="flex items-center md:order-2">
+    <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Login</button>
+    <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+      <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+          Sign Up
+      </span>
+    </button>
+
+
+      <!-- Dropdown menu -->
+
+      <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+  <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
+    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Feature</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Resources</a>
+      </li>
+
+    </ul>
+  </div>
+  </div>
+</nav>
+
+</section>
+
+
+<section>
+  <div class="container mx-auto pt-20 px-4">
+
+    <div class="flex flex-col md:flex-row justify-between">
+
+      <div>
+        <h1 class="text-4xl md:text-6xl font-sans font-bold py-5 max-w-md leading-10">More than just shorter links</h1>
+        <p class="text-xl py-5 max-w-md text-grayishViolet ">Build your brand's recognition and get detailed insights on how your links are performing.
+        </p>
+        <button type="button" class="py-2.5 my-5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Alternative</button>
+
+      </div>
+
+      <div>
+        <img src="./images/illustration-working.svg" alt="">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="shorten" class="relative bg-gray-100 mt-44" >
+
+  <!-- Shorten Container  -->
+
+  <div class="max-w-4xl mx-auto p-6 space-y-6">
+
+    <form  id="link-form" class="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3">
+
+
+
+       <input type="urltext" class="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none" placeholder="Shorten a Link Here" >
+       <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-cyan text-white hover:bg-cyan focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+        Shorten
+      </button>
+      
+
+
+    </form>
+
+
+
+    <!-- Link One   -->
+
+    <div class="flex flex-col  md:flex-row items-center md:justify-between  bg-white p-4 rounded-lg shadow ">
+
+      <div class="col-span-2 font-sans font-bold ">https://frontendmentor.io</div>
+      
+      <div class="flex gap-4 items-center">
+        <span class="font-bold text-cyan ">https://rel.ink/k4IKyk</span>
+        <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-cyan text-white hover:bg-cyan focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+          Shorten
+        </button>
+      </div>
+
+    </div>
+
+
+    <div class="flex flex-col  md:flex-row items-center md:justify-between  bg-white p-4 rounded-lg shadow ">
+
+      <div class="col-span-2 font-sans font-bold ">https://frontendmentor.io</div>
+      
+      <div class="flex gap-4 items-center">
+        <span class="font-bold text-cyan ">https://rel.ink/k4IKyk</span>
+        <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-cyan text-white hover:bg-cyan focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+          Shorten
+        </button>
+      </div>
+
+    </div>
+
+
+    
+    <div class="flex flex-col  md:flex-row items-center md:justify-between  bg-white p-4 rounded-lg shadow ">
+
+      <div class="col-span-2 font-sans font-bold ">https://frontendmentor.io</div>
+      
+      <div class="flex gap-4 items-center">
+        <span class="font-bold text-cyan ">https://rel.ink/k4IKyk</span>
+        <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-cyan text-white hover:bg-cyan focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+          Shorten
+        </button>
+      </div>
+
+    </div>
+
+
+    
+    <div class="flex flex-col  md:flex-row items-center md:justify-between  bg-white p-4 rounded-lg shadow ">
+
+      <div class="col-span-2 font-sans font-bold ">https://frontendmentor.io</div>
+      
+      <div class="flex gap-4 items-center">
+        <span class="font-bold text-cyan ">https://rel.ink/k4IKyk</span>
+        <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-cyan text-white hover:bg-cyan focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+          Shorten
+        </button>
+      </div>
+
+    </div>
+
+
+  
+
+    
+
+
+  </div>
+
+
+  <div>
+
+
+    
+    
+  </div>
+</section>
+
+
+<section id="stats" class="py-24 bg-gray-100" >
+
+  <div class="container mx-auto px-3">
+    <h2 class="text-4xl mb-6 font-bold text-center">
+      Advanced Statistics
+    </h2>
+    <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
+      Track now your links are pearforming across the web with our advanced statistics dashboard
+    </p>
+
+
+  </div>
+
+</section>
+
+<!-- feture box section  -->
+
+<section id="features" class="pb-32 bg-gray-100">
+  <div class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7">
+    <!-- horigental  -->
+
+    <div class="hidden absolute top-24 w-10/12 left-16 h-3 bg-cyan md:block">
+
+    </div>
+ 
+    <!-- vertical line  -->
+<div class="absolute w-2 h-full -ml-1 bg-cyan md:hidden left-1/2 ">
+
+
+
+  </div>
+
+  <!-- box one  -->
+
+<div class="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3">
+
+  <!-- img positioning  -->
+  <div class="absolute -ml-10 -top-10 md:left-16 left-1/2 ">
+
+    <!-- image container  -->
+
+    <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+      <img src="./images/icon-brand-recognition.svg" alt="" >
+    </div>
+  </div>
+  <h5 class="pt-6 text-xl font-bold texxt-center capitalize md:text-left">
+    Brand recognition
+  </h5>
+
+  <p class="text-center text-gray-400 md:text-left">
+    Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.
+  </p>
+</div>
+
+<!-- box-2 -->
+<div class="relative flex flex-col p-6 mt-24 space-y-6 bg-white rounded-lg md:w-1/3 md:mt-8">
+
+  <!-- img positioning  -->
+  <div class="absolute -ml-10 -top-10 md:left-16 left-1/2 ">
+
+    <!-- image container  -->
+
+    <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+      <img src="./images/icon-detailed-records.svg" alt="" >
+    </div>
+  </div>
+  <h5 class="pt-6 text-xl font-bold texxt-center capitalize md:text-left">
+    Detailed Records
+  </h5>
+
+  <p class="text-center text-gray-400 md:text-left">
+    Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
+
+  </p>
+</div>
+
+
+<!-- box-3  -->
+
+
+<div class="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3 mt-24 md:mt-12">
+
+  <!-- img positioning  -->
+  <div class="absolute -ml-10 -top-10 md:left-16 left-1/2 ">
+
+    <!-- image container  -->
+
+    <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+      <img src="./images/icon-fully-customizable.svg" alt="" >
+    </div>
+  </div>
+  <h5 class="pt-6 text-xl font-bold texxt-center capitalize md:text-left">
+    Fully Customizable
+  </h5>
+
+  <p class="text-center text-gray-400 md:text-left">
+    Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+
+  </p>
+</div>
+
+
+</section>
+
+
+<section class="bg-[url('../images/bg-boost-desktop.svg')] bg-cover py-24 bg-darkViolet bg-no-repeat " >
+  <div class="container mx-auto">
+
+    <div class="flex flex-col justify-center space-y-5 ">
+    <h1 class="text-4xl text-white font-bold text-center"> Boost your links today</h1>
+    <button class="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLlight md:text-base md:py-3 focus:outline-none">
+      Get Started
+    </button>
+  </div>
+  </div>
+</section>
+
+
+<section>
+
+  <footer class="py-16 bg-veryDarkViolet">
+    <div class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
+      <!-- Logo -->
+      <img src="images/logo.svg" alt="">
+
+      <!-- Menus Container -->
+      <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+        <!-- Menu 1 -->
+        <div class="flex flex-col items-center w-full md:items-start">
+          <div class="mb-5 font-bold text-white capitalize">Features</div>
+          <div class="flex flex-col items-center space-y-3 md:items-start">
+            <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Link shortening</a>
+            <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Branded links</a>
+            <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Analytics</a>
+          </div>
+        </div>
+
+        <!-- Menu 2 -->
+        <div class="flex flex-col items-center w-full md:items-start">
+          <div class="mb-5 font-bold text-white capitalize">Resources</div>
+          <div class="flex flex-col items-center space-y-3 md:items-start">
+            <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Blog</a>
+            <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Developers</a>
+            <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Support</a>
+          </div>
+        </div>
+
+        <!-- Menu 3 -->
+        <div class="flex flex-col items-center w-full md:items-start">
+          <div class="mb-5 font-bold text-white capitalize">Company</div>
+          <div class="flex flex-col items-center space-y-3 md:items-start">
+            <a href="#" class="capitalize text-grayishViolet hover:text-cyan">About</a>
+            <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Our Team</a>
+            <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Careers</a>
+            <a href="#" class="capitalize text-grayishViolet hover:text-cyan">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Container -->
+      <div class="flex space-x-6">
+        <a href="#">
+          <img src="images/icon-facebook.svg" alt="" class="ficon">
+        </a>
+        <a href="#">
+          <img src="images/icon-twitter.svg" alt="" class="ficon">
+        </a>
+        <a href="#">
+          <img src="images/icon-pinterest.svg" alt="" class="ficon">
+        </a>
+        <a href="#">
+          <img src="images/icon-instagram.svg" alt="" class="ficon">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</section>
+
+
+</body>
+</html>
